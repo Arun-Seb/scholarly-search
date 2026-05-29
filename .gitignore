@@ -1,0 +1,173 @@
+# ===========================================================================
+# PhD RAG Assistant — .gitignore
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# CRITICAL — Never commit these
+# ---------------------------------------------------------------------------
+
+# Your research documents — copyright + unpublished work
+*.pdf
+*.PDF
+*.docx
+*.doc
+*.pptx
+*.ppt
+
+# API Keys — never expose these publicly
+.env
+*.env
+.env.local
+.env.production
+secrets.json
+secrets.yaml
+api_keys.txt
+credentials.json
+
+# RAG Index — too large for GitHub (save to Google Drive instead)
+rag_index/
+storage/
+index_store.json
+vector_store.json
+docstore.json
+graph_store.json
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+myenv/
+
+# Test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# ---------------------------------------------------------------------------
+# Jupyter / Colab Notebooks
+# ---------------------------------------------------------------------------
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ---------------------------------------------------------------------------
+# Machine Learning / Data
+# ---------------------------------------------------------------------------
+
+# Model weights — too large for GitHub
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+*.h5
+*.pkl
+*.pickle
+
+# Datasets
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+
+# HuggingFace cache
+.cache/
+huggingface/
+transformers_cache/
+
+# Training outputs
+output/
+outputs/
+runs/
+logs/
+checkpoints/
+
+# ---------------------------------------------------------------------------
+# Operating System
+# ---------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ---------------------------------------------------------------------------
+# Editors and IDEs
+# ---------------------------------------------------------------------------
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-workspace
+
+# ---------------------------------------------------------------------------
+# Google Colab Specific
+# ---------------------------------------------------------------------------
+
+sample_data/
+/tmp/
+
+# ---------------------------------------------------------------------------
+# Project Specific
+# ---------------------------------------------------------------------------
+
+# Local PDF copies (copied from Drive during runtime, not needed in repo)
+pdfs/
+local_pdfs/
+extracted_text/
+temp/
+tmp/
